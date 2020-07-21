@@ -1,7 +1,7 @@
 package repeat;
 
 public class Card {
-	public final String[] PATTERNS = {"스페이드", "클로버", "하트", "다이아몬드"};
+	public final static String[] PATTERNS = {"스페이드", "클로버", "하트", "다이아몬드"};
 	private String pattern;
 	private String denomination;
 	
