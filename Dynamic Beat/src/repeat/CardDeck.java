@@ -15,7 +15,8 @@ public class CardDeck {
 			for(int j = 1; j < 14; j++) {
 				String pattern = Card.PATTERNS[i];
 				String deno = deno(j);
-				arr.add(new Card(pattern, deno));
+				int point = j > 10 ? 10 : j;
+				arr.add(new Card(pattern, deno, point));
 			}
 		}
 	}
@@ -29,4 +30,5 @@ public class CardDeck {
 		default : return String.valueOf(num);
 		}
 	}
+	
 }
